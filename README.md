@@ -1,9 +1,10 @@
 django-ueditor
 ==============
 
-> 该项目集成了ueditor富文本框。配置简单方便，主要解决图片、视频、文件上传问题
-> 该项目基于https://github.com/huzhicheng/uEditor_django
-> 开发环境 Django1.8、Python2.7
+ - 该项目集成ueditor富文本框。配置简单方便，主要解决图片、视频、文件上传问题
+ - 该项目基于 https://github.com/huzhicheng/uEditor_django 添加新功能并完善
+ - 开发环境 Django1.8、Python2.7
+ - 博客地址：http://yshblog.com/blog/80
 
 ##目前支持功能：
  - 基本文字、排版等功能
