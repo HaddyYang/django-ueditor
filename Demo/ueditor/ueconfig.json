@@ -5,7 +5,7 @@
     "imageCompressEnable": true, 
     "imageCompressBorder": 1600, 
     "imageInsertAlign": "none", 
-    "imageUrlPrefix": "/static/upload/images/",
+    "imageUrlPrefix": "/static/media/article/",
     "imagePathFormat": "{yyyy}{mm}{dd}/{yyyy}{mm}{dd}{time}{rand:3}", 
 
     "scrawlActionName": "uploadscrawl",
@@ -67,5 +67,12 @@
         ".ogg", ".ogv", ".mov", ".wmv", ".mp4", ".webm", ".mp3", ".wav", ".mid",
         ".rar", ".zip", ".tar", ".gz", ".7z", ".bz2", ".cab", ".iso",
         ".doc", ".docx", ".xls", ".xlsx", ".ppt", ".pptx", ".pdf", ".txt", ".md", ".xml"
-    ] 
+    ],
+
+    "openWaterMark": false,
+    "waterMarkText": "我的水印\nhttp://xxxxx.com",
+    "waterMarkFont": "msyhbd.ttf",
+    "waterMarkSize": 15,
+    "waterMarkBottom": 45,
+    "waterMarkRight": 155
 }

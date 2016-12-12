@@ -11,6 +11,7 @@ django-ueditor
  - 图片上传、文件上传、视频上传功能
  - 在线文件、在线图片功能
  - 可使用UEditor配置参数
+ - **图片加水印功能**
 
 ##*未实现功能：*
  - *涂鸦功能*
@@ -65,7 +66,7 @@ Demo使用方法：
 
 至此，配置工作完成，剩下的就是到页面上引用uEditor了，下面是一个简单的html页面，可根据uEditor放置位置调整脚本
 和样式的引用路径
-
+```
     <!DOCTYPE html>
     <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
@@ -85,5 +86,22 @@ Demo使用方法：
         <script id="editor" type="text/plain" style="width:100%;height:500px;"></script>
     </body>
     </html>
+```
+其中：  
+`var ue = UE.getEditor('editor');` 是ueditor实例化；  
+`SyntaxHighlighter.all();` 是代码高亮。
 
-其中`var ue = UE.getEditor('editor');`是ueditor实例化；`SyntaxHighlighter.all();`是代码高亮。
+-----
+##上传图片自动加水印
+该功能默认没开启。上传图片加水印功能需要安装PIL
+pip install pillow
+
+水印相关设置在ueconfig.json末尾：
+```
+    "openWaterMark": false,  //是否开启
+    "waterMarkText": "我的水印\nhttp://xxxxx.com", //水印内容，建议一行文本
+    "waterMarkFont": "msyhbd.ttf",  //字体，中文需要字体支持才不会出错
+    "waterMarkSize": 15,    //字体大小
+    "waterMarkBottom": 45,  //下边距
+    "waterMarkRight": 155   //右边距
+```
